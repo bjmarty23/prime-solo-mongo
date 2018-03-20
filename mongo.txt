@@ -1,0 +1,44 @@
+//..question 1
+//create a collection called orders
+//db.creatCollections('orders');
+//ok
+
+// 2
+//insert 3 documents 
+//> db.orders.insert({name:"Sleep"});
+//WriteResult({ "nInserted" : 1 })
+//> db.ordersi.insert({name:"Coffee"});
+//WriteResult({ "nInserted" : 1 })
+//> db.orders.insert({name:"Pillow"});
+//WriteResult({ "nInserted" : 1 })
+// db.orders.update({name:"Sleep"}, {$set: {date:"2017-02-03"}});
+//WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+///> > db.orders.update({name:"Pillow"}, {$set: {date:"2017-01-02"}});
+//WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+//> > db.orders.update({name:"Coffee"}, {$set: {date:"2017-04-04"}});
+//WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+// 3 pretty  
+	"_id" : ObjectId("5ab12b9ed364edccb9280062"),
+	"name" : "Sleep",
+	"date" : "2017-02-03"
+}
+{
+	"_id" : ObjectId("5ab12bdfd364edccb9280064"),
+	"name" : "Pillow",
+	"date" : "2017-01-02"
+}
+{
+	"_id" : ObjectId("5ab12f8ed364edccb9280065"),
+	"name" : "Coffee",
+	"date" : "2017-04-04"
+}
+ 
+ //     4
+ 
+ 
+ 
+ //     5
+  > db.orders.update({name:"Sleep"}, {$set: {orderValue:"63"}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
